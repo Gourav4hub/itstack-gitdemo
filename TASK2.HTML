@@ -1,0 +1,128 @@
+<html>
+    <head><style>
+        .container{
+            background-color: rgb(173, 206, 140);
+            margin-left: 300px;
+            margin-right: 300px;
+            width: auto;
+       
+            
+        }
+        input{
+            padding: 12px;
+            text-align: center;
+           } 
+           button{
+            padding: 12px;
+            background-color: rgb(175, 119, 227);
+            font-size: large;
+           } 
+           b{
+            font-size: large;
+           }
+      
+            
+     
+    </style>
+    <div class="container" align="center" ><br><hr><br>
+        
+       <h1 style="color:rgb(94, 9, 63)">Percentage Of 12th Class Students</h1><br><hr>
+    
+        <script>
+            function total()
+            {
+                var t1 = document.getElementById('t1');
+                var t2 = document.getElementById('t2');
+                var t3 = document.getElementById('t3');
+                var t4 = document.getElementById('t4');
+                var t5 = document.getElementById('t5');
+            
+
+                var a = parseFloat(t1.value);
+                var b = parseFloat(t2.value);
+                var c = parseFloat(t3.value);
+                var d = parseFloat(t4.value);
+                var e = parseFloat(t5.value);
+              
+
+                var f = a+b+c+d+e;
+                var tom = document.getElementById('tom');
+                tom.innerText = f;
+
+                
+                
+             }
+
+             function p1()
+             {
+                var t1 = document.getElementById('t1');
+                var t2 = document.getElementById('t2');
+                var t3 = document.getElementById('t3');
+                var t4 = document.getElementById('t4');
+                var t5 = document.getElementById('t5');
+            
+
+                var a = parseFloat(t1.value);
+                var b = parseFloat(t2.value);
+                var c = parseFloat(t3.value);
+                var d = parseFloat(t4.value);
+                var e = parseFloat(t5.value);
+              
+
+                var f = a+b+c+d+e; 
+                var p = (f/500)*100;
+                var perce = document.getElementById('perce');
+                perce.innerText = p;
+             }
+              
+         
+             
+
+                
+       
+        </script>
+    </head>
+
+    <body>
+        <h3>Hindi</h3>
+        <input type="text" id="t1" placeholder="Marks Obtain">
+
+        <h3>English</h3>
+        <input type="text" id="t2" placeholder="Marks Obtain">
+
+        <h3>Chemistry</h3>
+        <input type="text" id="t3" placeholder="Marks Obtain">
+
+        <h3>Physics</h3>
+        <input type="text" id="t4" placeholder="Marks Obtain">
+
+        <h3>Maths</h3>
+        <input type="text" id="t5" placeholder="Marks Obtain">
+        <br><br><br>
+
+        <table border="0px" cellpadding="20px">
+            <thead>
+                <tr>
+                    <th> <button onclick="total()">Total Marks</button></th>
+                    <th> <b>Total Obtain Marks : <span id="tom">0</span> </b></th>
+                </tr>
+                <tr>
+                    <th> <button onclick="p1()" >Percentage</button></th>
+                    <th><b>Your Percentage is : <span id="perce">0</span>%</b></th>
+                </tr>
+            </thead>
+        </table>
+       
+       
+
+       
+        <br>
+       <br><br> <hr><br><br><br>
+   
+
+
+
+
+        </div>
+    </body>
+</html>

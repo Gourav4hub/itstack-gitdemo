@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+            function check()
+            {
+
+                var num = parseInt(document.getElementById ('numbox').value)
+                var resbox = document.getElementById('resbox');
+
+                if(num%2==0)
+                    resbox.innerText="even number !";
+                else
+                     resbox.innerText="odd number !";
+            }
+
+        </script>
+    </head>
+    <body>
+         <input type="text" id="numbox" placeholder="number">
+         <button onclick="check()">check</button>
+
+         <br><br>
+
+         <b style="color: brown" id="resbox"> </b>
+
+    </body>
+</html>
